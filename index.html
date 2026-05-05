@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawan — Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+ <nav id="nav">
+    <div class="logo" data-hover>P</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-right" id="navMenu">
+      <a href="/" class="nav-link" data-hover>Home</a>
+      <a href="#about" class="nav-link" data-hover>About</a>
+      <a href="#skills" class="nav-link" data-hover>Skills</a>
+      <a href="#projects" class="nav-link" data-hover>Projects</a>
+      <a href="#contact" class="nav-cta" data-hover>Contact Me</a>
+    </div>
+</nav>
+
+  <section class="hero" id ="home">
+    <div class="hero-3d">
+        <img src="IMG/pawan.jpeg" alt="" srcset="">
+    </div>
+    <p class="hero-bio reveal">
+      <strong>Pawan Kumar — Full-Stack Developer & Cybersecurity Enthusiast</strong>
+      Crafting secure, elegant, and high-performance digital experiences with expertise in Python, Web Development, and System Security.
+    </p>
+    <div class="scroll-indicator">
+      <a href="#about">
+        <span>Scroll</span>
+      </a>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-3d">
+      <canvas id="aboutCanvas"></canvas>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-label">About</div>
+      <h2>Building secure digital solutions, one line at a time.</h2>
+      <p>I am a Full-Stack Developer and Cybersecurity enthusiast with a strong focus on Python and web technologies. 
+        I enjoy building secure, scalable, and efficient applications that solve real-world problems.
+    </p>
+
+    <p>
+        My work combines development and security — from designing user-friendly interfaces to implementing 
+        robust backend systems and protection mechanisms. I believe security should be a core part of every application.
+    </p>
+
+    <p>
+          I actively explore cybersecurity tools, work on personal projects, and continuously improve my skills 
+          to stay updated with modern technologies and emerging threats.
+    </p>
+      <div class="about-stats">
+        <div>
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div>
+          <div class="stat-num">Fresher</div>
+          <div class="stat-label">Years Exp</div>
+        </div>
+        <div>
+          <div class="stat-num">2</div>
+          <div class="stat-label">CVEs Found</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="section-label reveal">Skills</div>
+    <div class="skills-container">
+      <div class="skills-orbit reveal">
+        <canvas id="skillsCanvas"></canvas>
+      </div>
+      <div class="skills-list reveal">
+        <span class="skill-pill" data-hover>Python</span>
+        <span class="skill-pill" data-hover>JavaScript</span>
+        <span class="skill-pill" data-hover>c++</span>
+        <span class="skill-pill" data-hover>React</span>
+        <span class="skill-pill" data-hover>Node.js</span>
+        <span class="skill-pill" data-hover>Three.js</span>
+        <span class="skill-pill" data-hover>Django</span>
+        <span class="skill-pill" data-hover>Flask</span>
+        <span class="skill-pill" data-hover>PostgreSQL</span>
+        <span class="skill-pill" data-hover>AWS</span>
+        <span class="skill-pill" data-hover>Penetration Testing</span>
+        <span class="skill-pill" data-hover>Kali Linux</span>
+        <span class="skill-pill" data-hover>Burp Suite</span>
+        <span class="skill-pill" data-hover>Wireshark</span>
+        <span class="skill-pill" data-hover>Metasploit</span>
+        <span class="skill-pill" data-hover>Git</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-label reveal" style="text-align:center">Projects</div>
+    <div class="projects-grid">
+      <div class="project-card reveal" data-hover>
+        <div class="project-visual"><canvas id="proj1Canvas"></canvas></div>
+        <div class="project-info">
+          <div>
+            <div class="project-title">Sentinel Shield</div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Security</span>
+              <span class="project-tag">ML</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="#2a2a2a" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-hover>
+        <div class="project-visual"><canvas id="proj2Canvas"></canvas>
+        </div>
+        <div class="project-info">
+          <div>
+            <div class="project-title">ATS Resume Analyzer</div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Authentication</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="#2a2a2a" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-hover>
+        <div class="project-visual"><canvas id="proj3Canvas"></canvas></div>
+        <div class="project-info">
+          <div>
+            <div class="project-title">Netweave Dashboard</div>
+            <div class="project-tags">
+              <span class="project-tag">Flask + Chart.js</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Streamlit</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="#2a2a2a" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-hover>
+        <div class="project-visual"><canvas id="proj4Canvas"></canvas></div>
+        <div class="project-info">
+          <div>
+            <div class="project-title">CipherPost</div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="#2a2a2a" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-container">
+
+      <h2>Let's build something secure.</h2>
+      <p>Open for working, consulting & full-time opportunities.</p>
+
+      <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+      
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="input-group">
+          <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">Send Message</button>
+
+      </form>
+    </div>
+  </section>
+
+  <footer> 
+    <div>
+      <span>© 2025-2026 All rights reserved.</span><br>
+      <span> <a href="mailto:cyberhavens201@gmail.com" style="color: var(--text);">cyberhavens201@gmail.com</a></span>
+    </div>
+
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/pawankumar102" target="_blank">LinkedIn</a>
+        <a href="https://github.com/pawanrajlabsx" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
